@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - Entry point
- * @n: number 
+ * @n: number
  *
  * Return: Always 0 (Success)
  */
