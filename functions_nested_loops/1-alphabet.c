@@ -3,7 +3,7 @@
 /**
  * print_alphabet - a to z
  *
- * Return: nun
+ * Return: none
  */
 void print_alphabet(void)
 {
