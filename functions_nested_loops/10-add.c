@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * add - Entry point
  * @a: number
  * @b: number
  *
