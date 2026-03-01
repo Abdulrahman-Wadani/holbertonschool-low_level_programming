@@ -19,11 +19,10 @@ void more_numbers(void)
 			_putchar(c + '0');
 			if (j < 10)
 				c++;
-			if (j > 9)
-			{
+			if (j == 9)
 				c = 1;
+			if (j > 9)
 				_putchar((j % 10) + '0');
-			}
 		}
 		_putchar('\n');
 	}
