@@ -2,8 +2,8 @@
 
 /**
  * swap_int - Entry point
- * @a:
- * @b:
+ * @a: number
+ * @b: number
  *
  * Return: Always 0 (Success)
  */
