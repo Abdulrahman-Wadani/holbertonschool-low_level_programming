@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * rev_string - Entry point
  * @s: string
@@ -8,16 +9,16 @@
  */
 void rev_string(char *s)
 {
-	char c;
-	char str[] = "";
 	int counter = 0;
+	int counter2 = 0;
+	char c;
+	char *str;
 
-	for (c = s[0]; c != '\0'; c = s[counter])
-		counter++;
-	counter--;
-	for (; counter > -1; counter--)
+	for (c = s[counter]; c != '\0'; counter++)
 		str[counter] = s[counter];
-	for (; str[counter] != '\0'; counter++)
-		s[counter] = str[counter];
 
+	for (; counter > -1; counter2++)
+		s[counter2] = str[--counter];
+
+	
 }
