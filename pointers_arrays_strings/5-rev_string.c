@@ -14,7 +14,7 @@ void rev_string(char *s)
 	char c;
 	char c2;
 
-	while(s[co] != '\0')
+	while (s[co] != '\0')
 	{
 		co++;
 	}
