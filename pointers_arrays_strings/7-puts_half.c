@@ -15,10 +15,10 @@ void puts_half(char *str)
 		c++;
 
 	if (c % 2 != 0)
-		i = c / 2;
+		i = c / 2 - 1;
 	else
 		i = (c + 1) / 2;
-	i--;
+
 
 	while (i != c)
 	{
