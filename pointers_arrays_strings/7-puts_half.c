@@ -14,8 +14,6 @@ void puts_half(char *str)
 	while (str[c] != '\0')
 		c++;
 
-	c--;
-
 	if (c % 2 != 0)
 		i = c / 2;
 	else
@@ -25,5 +23,5 @@ void puts_half(char *str)
 	{
 		_putchar(str[i++]);
 	}
-	
+	_putchar('\n');
 }
