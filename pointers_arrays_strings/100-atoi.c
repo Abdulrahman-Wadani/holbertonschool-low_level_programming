@@ -12,7 +12,7 @@ int _atoi(char *s)
 	int number_Sign = 1;
 	int my_bool = 0;
 	int bool_startOfNumber = 0;
-	unsigned int my_return;
+	unsigned int my_return = 0;
 
 	while (s[i] != '\0')
 		if (s[i] >= '0' && s[i] <= '9')
