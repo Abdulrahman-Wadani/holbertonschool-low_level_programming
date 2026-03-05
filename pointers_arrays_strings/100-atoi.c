@@ -43,5 +43,5 @@ int _atoi(char *s)
 	}
 	if (number_Sign == -1)
 		return (-my_return);
-	return (0);
+	return (my_return);
 }
