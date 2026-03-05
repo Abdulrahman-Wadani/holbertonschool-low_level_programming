@@ -16,7 +16,10 @@ char *_strcpy(char *dest, char *src)
 		c++;
 
 	while (c2 <= c)
-		dest[c2++] = src[c];
+	{
+		dest[c2] = src[c2];
+		c2++;
+	}
 
 	return(dest);
 }
