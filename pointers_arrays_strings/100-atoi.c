@@ -41,9 +41,9 @@ int _atoi(char *s)
 				return (returned);
 			}
 			if (s[i] == '+')
-				number_Sign *= 1
+				number_Sign *= 1;
 			else if (s[i] == '-')
-				number_Sign *= -1
+				number_Sign *= -1;
 			if (s[i] >= '0' && s[i] <= '9' && !bool_startOfNumber)
 			{
 				bool_startOfNumber = 1;
