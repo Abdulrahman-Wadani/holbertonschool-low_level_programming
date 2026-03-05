@@ -9,7 +9,6 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *p;
 	int c = 0;
 	int c2 = 0;
 
@@ -19,7 +18,5 @@ char *_strcpy(char *dest, char *src)
 	while (c2 <= c)
 		dest[c2++] = src[c];
 
-	p = &dest;
-
-	return(p);
+	return(dest);
 }
