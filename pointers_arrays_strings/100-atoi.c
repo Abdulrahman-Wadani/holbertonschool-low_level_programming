@@ -28,12 +28,7 @@ int _atoi(char *s)
 		while (s[i] != '\0')
 		{
 			if (bool_startOfNumber == 1 && !(s[i] >= '0' && s[i] <= '9'))
-			{
-				if (number_Sign == 1)
-					return (my_return);
-				else
-					return (-my_return);
-			}
+				break;
 			if (s[i] == '-')
 				number_Sign *= -1;
 			if (s[i] >= '0' && s[i] <= '9' && !bool_startOfNumber)
@@ -46,5 +41,7 @@ int _atoi(char *s)
 			i++;
 		}
 	}
+	if (number_Sign == -1)
+		return (-my_return);
 	return (0);
 }
