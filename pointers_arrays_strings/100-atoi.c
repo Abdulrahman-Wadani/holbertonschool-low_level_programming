@@ -52,6 +52,6 @@ int _atoi(char *s)
 			i++;	
 		}
 	}
-	else
-		return (0);
+
+	return (0);
 }
