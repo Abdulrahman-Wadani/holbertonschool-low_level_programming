@@ -8,16 +8,10 @@
  */
 int _atoi(char *s)
 {
-	int len_of_s = 0;
-	int i = 0;
-	int number_Sign = 1;
-	int my_bool = 0;
-	int bool_startOfNumber = 0;
-	unsigned int returned;
+	int len_of_s = 0; int i = 0; int number_Sign = 1; int my_bool = 0; int bool_startOfNumber = 0; unsigned int returned;
 
 	while (s[len_of_s] != '\0')
 		len_of_s++;
-
 	while (i <= len_of_s)
 		if (s[i] >= '0' && s[i] <= '9')
 		{
@@ -26,9 +20,7 @@ int _atoi(char *s)
 		}
 		else
 			i++;
-
 	i = 0;
-
 	if (my_bool == 1)
 	{
 		while (i <= len_of_s)
@@ -54,6 +46,5 @@ int _atoi(char *s)
 			i++;	
 		}
 	}
-
 	return (0);
 }
