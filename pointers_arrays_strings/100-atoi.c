@@ -29,9 +29,7 @@ int _atoi(char *s)
 
 	i = 0;
 
-	if (my_bool == 0)
-		return (0);
-	else
+	if (my_bool == 1)
 	{
 		while (i <= len_of_s)
 		{
@@ -54,4 +52,6 @@ int _atoi(char *s)
 			i++;	
 		}
 	}
+	else
+		return (0);
 }
