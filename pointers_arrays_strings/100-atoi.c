@@ -48,7 +48,7 @@ int _atoi(char *s)
 				returned = s[i] - '0';
 			}
 			else if (bool_startOfNumber)
-				returned = returned * 10 + s[i] - '0';
+				returned = returned * 10 + (s[i] - '0');
 			i++;	
 		}
 	}
