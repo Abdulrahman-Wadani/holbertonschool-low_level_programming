@@ -8,7 +8,8 @@
  */
 int _atoi(char *s)
 {
-	int len_of_s = 0; int i = 0; int number_Sign = 1; int my_bool = 0; int bool_startOfNumber = 0; unsigned int returned;
+	int len_of_s = 0; int i = 0; int number_Sign = 1; int my_bool = 0;
+	int bool_startOfNumber = 0; unsigned int returned;
 
 	while (s[len_of_s] != '\0')
 		len_of_s++;
