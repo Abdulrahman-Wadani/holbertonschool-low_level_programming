@@ -13,7 +13,7 @@ int _atoi(char *s)
 	int number_Sign = 1;
 	int my_bool = 0;
 	int bool_startOfNumber = 0;
-	int returned;
+	unsigned int returned;
 
 	while (s[len_of_s] != '\0')
 		len_of_s++;
@@ -35,8 +35,10 @@ int _atoi(char *s)
 		{
 			if (bool_startOfNumber == 1 && !(s[i] >= '0' && s[i] <= '9'))
 			{
-				returned *= number_Sign;
-				return (returned);
+				if (number_Sign == 1)
+					return (returned);
+				else
+					return (-returned);
 			}
 			if (s[i] == '+')
 				number_Sign *= 1;
