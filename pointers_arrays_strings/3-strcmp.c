@@ -13,7 +13,7 @@ int _strcmp(char *s1, char *s2)
 		j = j + s1[i++];
 
 	while (s2[c])
-		d = d + s1[c++];
+		d = d + s2[c++];
 
 	if (j == d)
 		return (0);
