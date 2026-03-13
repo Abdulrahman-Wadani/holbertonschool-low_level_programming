@@ -12,7 +12,8 @@ int main(int argc, char **argv)
 	int i = 0, j = 0, c = 0;
 	int ch1 = 1, ch2 = 1;
 
-	if (argv[argc - 1][0] >= '0' && argv[argc - 2][0] <= '9')
+	if (argv[argc - 1][0] >= '0' && argv[argc - 1][0] <= '9' &&
+		 argv[argc - 2][0] >= '0' && argv[argc - 2][0] <= '9')
 	{
 		while (argv[argc - 2][c])
 		{
