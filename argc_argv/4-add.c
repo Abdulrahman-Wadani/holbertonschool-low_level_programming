@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	int i = 0;
+	int i = 1;
 	int total = 0;
 
 	if (argc < 2)
@@ -26,6 +26,7 @@ int main(int argc, char **argv)
 			printf("Error\n");
 			return (1);
 		}
+		i++;
 	}
 	printf("%d\n", total);
 	return (0);
