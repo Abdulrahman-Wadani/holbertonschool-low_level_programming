@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 		return (1);
 	}
 	cen = atoi(argv[argc - 1]);
-	if (cen < 0)
+	if (cen < 1)
 	{
 		printf("0\n");
 		return (0);
@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 	{
 		if (i == cen)
 			break;
-		if (num + cv[index] > cen)
+		if (i + cv[index] > cen)
 			index++;
 		i += cv[index];
 		num += 1;
