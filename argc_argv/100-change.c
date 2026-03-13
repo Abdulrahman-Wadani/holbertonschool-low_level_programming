@@ -12,8 +12,8 @@ int main(int argc, char **argv)
 	int cv[] = {25, 10, 5, 2, 1};
 	int index = 0;
 	int num = 0;
-	int i = 0;
-	int cen;
+	unsigned int i = 0;
+	unsigned int cen;
 
 	if (argc != 2)
 	{
