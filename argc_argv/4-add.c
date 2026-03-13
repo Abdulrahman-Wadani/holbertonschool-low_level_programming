@@ -13,7 +13,7 @@ int check(char *s)
 
 	while (s[i])
 	{
-		if (s[i] > '9' && s[i] < '0')
+		if (s[i] > '9' || s[i] < '0')
 			return (0);
 		i++;
 	}
@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 	}
 	while (argv[i])
 	{
-		if (check((argv[i])) && atoi(argv[i]) > 0)
+		if (check(argv[i]))
 			total += atoi(argv[i]);
 		else
 		{
