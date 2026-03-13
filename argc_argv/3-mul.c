@@ -16,20 +16,20 @@ int main(int argc, char **argv)
 	{
 		while (argv[argc - 2][c])
 		{
-			if (argv[argc][c] == '-')
+			if (argv[argc - 2][c] == '-')
 				ch1 *= -1;
 			i *= 10;
-			i +=  argv[argc][c];
+			i +=  argv[argc - 2][c];
 			i *= ch1;
 			c++;
 		}
 		c = 0;
 		while (argv[argc - 1][c])
 		{
-			if (argv[argc][c] == '-')
+			if (argv[argc - 1][c] == '-')
 				ch2 *= -1;
 			j *= 10;
-			j +=  argv[argc][c];
+			j +=  argv[argc - 1][c];
 			j *= ch2;
 			c++;
 		}
