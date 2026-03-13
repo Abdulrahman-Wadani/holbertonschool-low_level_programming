@@ -32,8 +32,11 @@ int main(int argc, char **argv)
 			break;
 		if (i + cv[index] > cen)
 			index++;
+		else
+		{
 		i += cv[index];
 		num += 1;
+		}
 	}
 	printf("%d", num);
 	return (0);
