@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+int is_prime_number_sub(int n, int j);
 
 /**
  * is_prime_number - short description
