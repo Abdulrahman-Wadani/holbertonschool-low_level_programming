@@ -1,4 +1,4 @@
-#include <stddef.h>
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - short description
@@ -9,34 +9,14 @@
  */
 int main(int argc, char **argv)
 {
-	int i = 0, j = 0, c = 0;
-	int ch1 = 1, ch2 = 1;
+	int i;
 
-	if (argv[argc - 1][1] >= '0' && argv[argc - 1][1] <= '9' &&
-		 argv[argc - 2][1] >= '0' && argv[argc - 2][1] <= '9')
+	if (atoi(argv[argc - 1]) && atoi(argv[argc - 2]))
 	{
-		while (argv[argc - 2][c])
-		{
-			if (argv[argc - 2][c] == '-')
-				ch1 *= -1;
-			i *= 10;
-			i +=  argv[argc - 2][c] - '0';
-			i *= ch1;
-			c++;
-		}
-		c = 0;
-		while (argv[argc - 1][c])
-		{
-			if (argv[argc - 1][c] == '-')
-				ch2 *= -1;
-			j *= 10;
-			j +=  argv[argc - 1][c] - '0';
-			j *= ch2;
-			c++;
-		}
-		printf("%d\n", (i * j));
-		return (0);
+		i = atoi(argv[argc - 1]) * atoi(argv[argc - 2]);
+		printf("%d\n", i);
 	}
+
 	printf("Error\n");
 	return (1);
 }
