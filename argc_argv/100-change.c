@@ -35,6 +35,6 @@ int main(int argc, char **argv)
 		i += cv[index];
 		num += 1;
 	}
-
-	return (num);
+	printf("%d", num);
+	return (0);
 }
