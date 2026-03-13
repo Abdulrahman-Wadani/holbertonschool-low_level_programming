@@ -1,5 +1,25 @@
 #include <stdlib.h>
 #include <stdio.h>
+
+/**
+ * check - short description
+ * @s: description
+ *
+ * Return: Nothing
+ */
+int check(char *s)
+{
+	int i = 0;
+
+	while (s[i])
+	{
+		if (s[i] > '9' && s[i] < '0')
+			return (0);
+		i++;
+	}
+
+	return (1);
+}
 /**
  * main - short description
  * @argc: description
@@ -19,7 +39,7 @@ int main(int argc, char **argv)
 	}
 	while (argv[i])
 	{
-		if (atoi(argv[i]) && atoi(argv[i]) > 0)
+		if (check((argv[i])) && atoi(argv[i]) > 0)
 			total += atoi(argv[i]);
 		else
 		{
