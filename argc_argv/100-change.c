@@ -20,12 +20,12 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	cen = atoi(argv[argc - 1]);
-	if (cen < 1)
+	if (atoi(argv[argc - 1]) < 1)
 	{
 		printf("0\n");
 		return (0);
 	}
+	cen = atoi(argv[argc - 1]);
 	while (1)
 	{
 		if (i == cen)
