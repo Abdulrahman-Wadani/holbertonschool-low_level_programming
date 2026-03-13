@@ -38,6 +38,6 @@ int main(int argc, char **argv)
 		num += 1;
 		}
 	}
-	printf("%d", num);
+	printf("%d\n", num);
 	return (0);
 }
