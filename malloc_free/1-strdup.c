@@ -11,10 +11,13 @@ int count_len(char *str);
  */
 char *_strdup(char *str)
 {
-	char *p = (char *) malloc(count_len(str));
+	char *p;
 	int i = 0;
 
-	if (str == NULL || p == NULL)
+	if (str == NULL)
+		return (NULL);
+	p = (char *) malloc(count_len(str));
+	if (p == NULL)
 		return (NULL);
 	while (str[i])
 	{
