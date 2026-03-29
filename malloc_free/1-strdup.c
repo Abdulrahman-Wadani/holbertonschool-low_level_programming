@@ -41,5 +41,5 @@ int count_len(char *str)
 	{
 		i++;
 	}
-	return (i);
+	return (++i);
 }
