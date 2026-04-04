@@ -3,6 +3,23 @@
 #include "dog.h"
 
 /**
+ * count_len - description
+ * @str: description
+ *
+ * Return: description
+ */
+int count_len(char *str)
+{
+	int i = 1;
+
+	while (str[i])
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
  * new_dog - description
  * @name: description
  * @age: description
@@ -13,53 +30,35 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d = malloc(sizeof(dog_t));
-	int i = 0, nlen = 1, olen = 1;
+	int i;
 
+	if (name == NULL || owner == NULL)
+		return (NULL);
 	if (d == NULL)
 	{
 		free(d);
 		return (NULL);
 	}
-	if (name != NULL)
+	d->name = malloc(count_len(name));
+	if (d->name == NULL)
 	{
-		while (name[i])
-		{
-			nlen += 1;
-			i++;
-		}
-		d->name = malloc(nlen);
-		if (d->name == NULL)
-		{
-			free(d->name);
-			free(d);
-			return (NULL);
-		}
-		for (i = 0; i < nlen; i++)
-			d->name[i] = name[i];
-	}
-	else
+		free(d->name);
+		free(d);
 		return (NULL);
+	}
+	for (i = 0; i < count_len(name); i++)
+		d->name[i] = name[i];
 	i = 0;
-	if (owner != NULL)
+	d->owner = malloc(count_len(owner));
+	if (d->owner == NULL)
 	{
-		while (owner[i])
-		{
-			olen += 1;
-			i++;
-		}
-		d->owner = malloc(olen);
-		if (d->owner == NULL)
-		{
-			free(d->owner);
-			free(d);
-			return (NULL);
-		}
-		for (i = 0; i < olen; i++)
-			d->owner[i] = owner[i];
-	}
-	else
+		free(d->owner);
+		free(d->name);
+		free(d);
 		return (NULL);
+	}
+	for (i = 0; i < count_len(owner); i++)
+		d->owner[i] = owner[i];
 	(*d).age = age;
 	return (d);
-
 }
