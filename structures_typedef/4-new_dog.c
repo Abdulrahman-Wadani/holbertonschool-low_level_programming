@@ -10,13 +10,13 @@
  */
 int count_len(char *str)
 {
-	int i = 1;
+	int i = 0;
 
 	while (str[i])
 	{
 		i++;
 	}
-	return (i);
+	return (++i);
 }
 
 /**
@@ -48,7 +48,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 	for (i = 0; i < count_len(name); i++)
 		d->name[i] = name[i];
-	i = 0;
 	d->owner = malloc(count_len(owner));
 	if (d->owner == NULL)
 	{
