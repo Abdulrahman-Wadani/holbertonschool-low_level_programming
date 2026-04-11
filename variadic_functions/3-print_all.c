@@ -22,13 +22,13 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", s);
 				p[j].f(args);
+				s = ", ";
 				break;
 			}
 			j++;
 		}
 		i++;
 		j = 0;
-		s = ", ";
 
 	}
 	printf("\n");
