@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * name - description
- * @arg: description
+ * free_dlistint - Frees a doubly linked list.
+ * @head: Pointer to the head of the list.
  *
- * Return: description
+ * Return: Nothing.
  */
 void free_dlistint(dlistint_t *head)
 {
