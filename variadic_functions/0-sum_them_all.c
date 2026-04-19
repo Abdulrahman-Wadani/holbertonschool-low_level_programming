@@ -9,7 +9,6 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list args;
-	unsigned int i;
 	int sum;
 
 	if (n == 0)
@@ -17,8 +16,15 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(args, n);
 	sum = va_arg(args, int);
 
-	for (i = 1; i < n; i++)
-		sum += va_arg(args, int);
+	sum += va_arg(args, int);
 
 	return (sum);
 }
+int main(void)
+{
+	/* code */
+	sum_them_all(3, 7, 8, 9);
+	printf("%d\n", sum_them_all(3, 7, 7, 7));
+	return 0;
+}
+

@@ -85,4 +85,3 @@ void print_f(va_list args)
 {
 	printf("%f", va_arg(args, double));
 }
-
