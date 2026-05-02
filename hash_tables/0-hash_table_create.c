@@ -13,7 +13,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!t)
 		return (NULL);
 	t->size = size;
-	t->array = calloc(size, sizeof(hash_node_t **));
+	t->array = calloc(size, sizeof(hash_node_t *));
 	if (!t->array)
 	{
 		free(t);
